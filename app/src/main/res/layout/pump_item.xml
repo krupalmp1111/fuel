@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/pumpimage"
+            android:layout_width="149dp"
+            android:layout_height="172dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/abc" />
+
+        <TextView
+            android:id="@+id/pumpname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/audiowide"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#810505"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/ownername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/aclonica"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#304FFE" />
+
+        <TextView
+            android:id="@+id/pricetag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/aclonica"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="#12783C" />
+
+        <Button
+            android:text="DELETE"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:id="@+id/delBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF0000" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

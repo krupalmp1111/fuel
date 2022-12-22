@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddPumpActivity">
+
+    <TextView
+        android:id="@+id/EditPumpU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_primary"
+        android:text="EDIT PUMP"
+        android:textAlignment="center"
+        android:textColor="#FFFFFFFF"
+        android:textSize="30dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etEnterPumpNameU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="Enter Pump Name"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/EditPumpU"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <EditText
+        android:id="@+id/etEnterownerNameU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="Enter Owner Name"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterPumpNameU"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+
+    <EditText
+        android:id="@+id/etEnterPriceU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:hint="Enter price"
+        android:inputType="number"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterownerNameU"
+        tools:layout_editor_absoluteX="-16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <EditText
+        android:id="@+id/etEnterDescriptionU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:lines="5"
+        android:hint="Enter Description"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterPriceU"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <EditText
+        android:id="@+id/etEnterImageUrlU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:ems="10"
+        android:lines="5"
+        android:hint="Enter Image Url"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterDescriptionU"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <Button
+        android:id="@+id/btneditpump"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/btn_primary"
+        android:minHeight="28dp"
+        android:padding="12dp"
+        android:text="Edit Pump"
+        android:textColor="@color/colorPrimaryButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEnterImageUrlU"
+        app:layout_constraintVertical_bias="0.081" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
